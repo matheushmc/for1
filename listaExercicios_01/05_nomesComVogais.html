@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+    //PROBLEMA
+    //Considere a lista de nomes abaixo:
+    // let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    //Identifique os nomes que começam com qualquer vogal (A, E, I, O, U) e apresente os nomes em ordem alfabética.
+
+    //ENTRADA
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    
+    let vogal = []
+
+    let outros = []
+    //PROCESSAMENTO
+    for (nomes of listaDeNomes) {
+        if(nomes.charAt(0) === "A" || nomes.charAt(0) === "E" || nomes.charAt(0) === "I" || nomes.charAt(0) === "O" || nomes.charAt(0) === "U"){
+           vogal.push(nomes) 
+        }else{
+           outros.push(nomes) 
+        }
+    }
+
+    //SAÍDA
+    document.write(`nomes que comecam com vogal ${vogal.sort()} <br/> nomes que nao comecam com vogal ${outros.sort()}`)
+</script>
